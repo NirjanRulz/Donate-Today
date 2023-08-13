@@ -1,6 +1,7 @@
 /* header style */
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -58,10 +59,10 @@
 }
 
 .middle-money {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 45px;
+    margin-top: 50px;
 }
 
 .middle-money1 {
@@ -208,4 +209,98 @@ color: #121212;
 }
 .I{
     color: #FEE;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .middle-money{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contribute1{
+        flex-direction: column;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contribute2{
+        flex-direction: column;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contribute-description{
+        width: 300px;
+    }
+    .contribute-img{
+        width: 300px;
+        height:300px;
+    }
+    .form{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .donate-plan{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-title{
+        font-size: 45px;
+    }
+    .header-description, .header-title{
+        color:aquamarine;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header-description{
+        margin-right: 150px;
+    }
+    .middle-money{
+        justify-content: center;
+        padding-left: 250px;
+        flex-wrap: wrap;
+    }
+    .contribute1{
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .contribute2{
+        flex-direction: column;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+    .update{
+        width: 100%;
+    }
+    .donate-title{
+        text-align: center;
+        margin-left: 300px;
+    }
+    .donate-description{
+        text-align: center;
+        margin-left: 300px;
+        padding-left: 0px;
+    }
+    hr{
+        width: 1200px;
+    }
+    .donate-btn{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .header{
+        width: 1200px;
+    }
+    .form{
+        width: 900px;
+        margin: 50px 50px;
+    }
+    .footer{
+        width: 1050px;
+    }
 }
